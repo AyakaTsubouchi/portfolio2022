@@ -23,10 +23,37 @@
     display: table-cell;
     vertical-align: middle;
   }
+  .box-shadow{
+    box-shadow:0px 0px 16px rgba(0,0,0,0.5);
+  }
+  .bg-lime-300{
+    background-color: rgb(190 242 100);
+  }
 }
 
 .only-desktop {
   display: none;
+}
+.postcard-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.postcard-inner {
+  height: 90vh;
+  width: 90vw;
+}
+.postcard-inner ul li{
+  border-bottom:1px solid gray;
+}
+.postcard-body{
+  width: 100%;
+  height: 90%;
+  margin-top: -50px;
+}
+
+.left-column,.right-column{
+  height:auto;
 }
 
 .postcard-back {
