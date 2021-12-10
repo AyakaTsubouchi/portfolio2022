@@ -34,13 +34,12 @@ export default function Index() {
         messages={locales.getIntlMessages(queryLan || lan)}
       >
         <ShowTop />
-        <div className="main-page">
+        <div className="main-page" id="main-page">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             {/* <Route path="/projects/*" element={<SingleProject />} /> */}
           </Routes>
         </div>
-        <ScrollToTop />
       </IntlProvider>
     </Router>
   );

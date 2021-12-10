@@ -1,5 +1,4 @@
 import React from "react";
-import "./about.css";
 import Back from "components/PostCardStyle/Back";
 import FirstContent from "./FirstContent";
 import SecondContent from "./SecondContent";
