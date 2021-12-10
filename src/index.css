@@ -1,0 +1,80 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  input::placeholder {
+    padding-left: 10px;
+  }
+
+  textarea::placeholder {
+    padding-left: 10px;
+  }
+}
+
+@layer components {
+  .table {
+    display: table;
+  }
+
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.only-desktop {
+  display: none;
+}
+
+.postcard-back {
+  position: relative;
+}
+
+.transparent-black {
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.transparent-white {
+  background-color: rgba(255, 255, 255, 0.5)
+}
+
+.text-box {
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text-box ul li {
+  border: none;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px #000;
+}
+.card-back-title {
+  margin-bottom: 50px;
+}
+
+@media (min-width:640px) {
+  .only-desktop {
+    display: block;
+  }
+
+  .bottom-right {
+    margin: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .card-back-title {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -60px;
+  }
+}

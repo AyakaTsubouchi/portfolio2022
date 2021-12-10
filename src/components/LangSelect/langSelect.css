@@ -1,0 +1,9 @@
+.language-selector img{
+    width:100px
+}
+
+@media (min-width:640px) {
+    .language-selector img{
+        width:150px
+    }
+}

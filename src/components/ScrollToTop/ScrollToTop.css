@@ -1,0 +1,22 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 130px;
+    right: 20px;
+    padding: 13px;
+    background-color: var(--green);
+    opacity:0.9;
+    border-radius: 30px;
+    transform: rotate(180deg) translateX(-100px);
+    z-index: 1;
+}
+.scroll-to-top.visible{
+    transform:rotate(180deg) translateX(0px);
+}
+@media (max-width:576px) {
+    .scroll-to-top {
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        padding: 8px;
+    }
+}
