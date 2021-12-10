@@ -7,7 +7,7 @@ import RightContent from "./RightContent"
 
 export default function index() {
   return (
-    <div>
+    <div id="top">
       <Front Header={HeaderContent} Left={LeftContent} Right={RightContent}/>
     </div>
   );

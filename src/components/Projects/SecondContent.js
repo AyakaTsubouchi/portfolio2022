@@ -1,29 +1,29 @@
 import React from "react";
-import bonaTop from "images/projects/bona_home.png";
+import goopterMain from "images/projects/goopter_home.png";
 import { Link } from "react-router-dom";
 
-export default function FirstContent() {
+export default function SecondContent() {
   return (
     <>
-      <div className="grid grid-col-1 deskvvtop:grid-cols-2">
+      <div className="grid grid-col-1 desktop:grid-cols-2">
         <div className="left-column">
           <h5 className="font-hand-writing text-xl">
-            Wordpress Theme Development
+            Wordpress Plugin Development
           </h5>
-          <h1 className="font-hand-writing text-3xl">Bonalife Website</h1>
+          <h1 className="font-hand-writing text-3xl">Goopter Website</h1>
           <h5 className="font-hand-writing text-xl">
-            Responsive Website for Salon
+            Responsive Website for Tech Company
           </h5>
           <div className="mt-4">
             <Link
-              to="/projects/bonalife"
+              to="/projects/goopter"
               className="font-hand-writing text-xl"
             >{`Detail ->`}</Link>
           </div>
         </div>
         <div className="right-colum">
           <div className="">
-            <img className="m-3" src={bonaTop} alt="" />
+            <img className="m-3" src={goopterMain} alt="" />
           </div>
         </div>
       </div>

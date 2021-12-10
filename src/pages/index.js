@@ -11,6 +11,7 @@ import ScrollToTop from "components/ScrollToTop";
 import MetaTags from "react-meta-tags";
 import locales from "app/locales";
 import LandingPage from "pages/LandingPage";
+import SingleProject from "pages/SingleProject"
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -37,7 +38,7 @@ export default function Index() {
         <div className="main-page" id="main-page">
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            {/* <Route path="/projects/*" element={<SingleProject />} /> */}
+            <Route path="/projects/singleproject" element={<SingleProject />} />
           </Routes>
         </div>
       </IntlProvider>

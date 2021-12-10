@@ -23,37 +23,45 @@
     display: table-cell;
     vertical-align: middle;
   }
-  .box-shadow{
-    box-shadow:0px 0px 16px rgba(0,0,0,0.5);
+
+  .box-shadow {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
   }
-  .bg-lime-300{
+
+  .bg-lime-300 {
     background-color: rgb(190 242 100);
+  }
+  .bg-red-300 {
+    background-color: #fca5a5;
   }
 }
 
 .only-desktop {
   display: none;
 }
+.only-mobile {
+  display: block;
+}
+
 .postcard-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .postcard-inner {
-  height: 90vh;
+  min-height: 90vh;
   width: 90vw;
 }
-.postcard-inner ul li{
-  border-bottom:1px solid gray;
-}
-.postcard-body{
-  width: 100%;
-  height: 90%;
-  margin-top: -50px;
+
+.postcard-inner ul li {
+  border-bottom: 1px solid gray;
 }
 
-.left-column,.right-column{
-  height:auto;
+.postcard-body {
+  width: 100%;
+  height: 90%;
+  /* margin-top: -50px; */
 }
 
 .postcard-back {
@@ -65,7 +73,7 @@
 }
 
 .transparent-white {
-  background-color: rgba(255, 255, 255, 0.5)
+  background-color: rgba(255, 255, 255, 0.8)
 }
 
 .text-box {
@@ -81,14 +89,25 @@
 .text-shadow {
   text-shadow: 2px 2px 5px #000;
 }
+
 .card-back-title {
   margin-bottom: 50px;
 }
-
+/* contact */
+.sent-stamp{
+  position: absolute;
+  bottom: 0px;
+  right: 100px;
+}
 @media (min-width:640px) {
+  
   .only-desktop {
     display: block;
   }
+  .only-mobile {
+    display: none;
+  }
+
 
   .bottom-right {
     margin: 50px;

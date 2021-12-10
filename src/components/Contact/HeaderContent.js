@@ -13,7 +13,7 @@ export default function HeaderContent() {
 
   return (
     <>
-      <p className="text-xl text-left">
+      <p className="only-desktop text-xl text-left">
         {today.toLocaleDateString("en-US", options)}
       </p>
       <h1 className="text-2xl text-center text-gray-500">
