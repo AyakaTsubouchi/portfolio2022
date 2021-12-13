@@ -13,14 +13,14 @@ import ScrollToTop from "components/ScrollToTop";
 export default function index() {
   return (
     <div>
-      <div className="only-mobile">
+      {/* <div className="only-mobile"> */}
         <Home />
         <About />
         <Projects />
         <Contact />
-        <ScrollToTop />
-      </div>
-      <div className="only-desktop">
+        <ScrollToTop bgColor={"#fca5a5"}/>
+      {/* </div> */}
+      {/* <div className="only-desktop">
         <Parallax pages={6}>
           <ParallaxLayer sticky={{ start: 0, end: 1 }}>
             <div id="top"></div>
@@ -46,7 +46,7 @@ export default function index() {
             <Contact />
           </ParallaxLayer>
         </Parallax>
-      </div>
+      </div> */}
     </div>
   );
 }

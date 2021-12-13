@@ -7,12 +7,12 @@ import { projects } from "./projectsData";
 import ContentsWrapper from "./ContentsWrapper";
 
 export default function index() {
-
   return (
     <>
-      <Back bg="bg-lime-300" Content={FirstContent} />
-      <Back bg="bg-red-300" Content={SecondContent} />
-      
+      <div id="projects">
+        <Back bg="bg-lime-300" Content={FirstContent} />
+        <Back bg="bg-red-300" Content={SecondContent} />
+      </div>
     </>
   );
 }

@@ -3,20 +3,13 @@
     bottom: 130px;
     right: 20px;
     padding: 13px;
-    background-color: black;
+    background-color: rgb(216, 216, 216);
     opacity:0.9;
     border-radius: 30px;
-    /* transform: rotate(180deg) translateX(-100px); */
+    transform: rotate(180deg) translateX(-100px);
     z-index: 1;
+    transition-duration: 0.5s;
 }
 .scroll-to-top.visible{
-    /* transform:rotate(180deg) translateX(0px); */
-}
-@media (max-width:576px) {
-    .scroll-to-top {
-        position: fixed;
-        bottom: 120px;
-        right: 20px;
-        padding: 8px;
-    }
+    transform:rotate(180deg) translateX(0px);
 }

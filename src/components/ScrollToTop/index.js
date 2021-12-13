@@ -1,17 +1,37 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import "./ScrollToTop.css";
 
-export default function Index() {
+export default function Index({bgColor}) {
+  const [isVisible, setIsVisible] = useState(false);
+  const style={
+    background: bgColor
+  }
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+  const toggleVisibility = () => {
+    if (!isVisible && window.pageYOffset > 500) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("scroll", function (e) {
+      toggleVisibility()
+         return () => {
+      window.removeEventListener('keydown', toggleVisibility);
+    };
+    });
+    
+  },[]);
 
   return (
-    <div className={`scroll-to-top`}>
-      <a href="#top">
+    <div className={`scroll-to-top ${isVisible ? "visible" : null}`} style={style? style : null}>
+      <a onClick={scrollToTop}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
