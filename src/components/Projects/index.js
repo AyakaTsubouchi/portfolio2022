@@ -17,6 +17,7 @@ export default function index() {
               shortDescription= {project.shortDescription}
               link= {project.link}
               mainImageUrl= {project.mainImageUrl}
+              textColor={project.textColor}
             />)}
           />
         ))}

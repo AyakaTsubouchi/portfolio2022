@@ -34,9 +34,11 @@
   .bg-red-300 {
     background-color: #fca5a5;
   }
+  .bg-green{
+    background-color: #248066;
+  }
   .img-h-450{
     max-height: 450px;
-    object-fit: cover;
   }
 }
 
