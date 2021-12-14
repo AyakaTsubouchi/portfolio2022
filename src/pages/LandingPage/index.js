@@ -7,8 +7,6 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Back from "components/PostCardStyle/Back";
 import FirstContent from "components/About/FirstContent";
 import SecondContent from "components/About/SecondContent";
-import ProjectFirst from "components/Projects/FirstContent"
-import ProjectSecond from "components/Projects/SecondContent"
 import ScrollToTop from "components/ScrollToTop";
 export default function index() {
   return (

@@ -6,6 +6,8 @@ export default {
     "contact":"Contact",
     "name":"Ayaka Tsubouchi",
     "address":process.env.REACT_APP_EMAIL,
+    "features":"Features",
+
     "home_greeting":"Nice to meet you!",
     "home_self_one":"I’m a ",
     "home_self_one_strong":"Frontend Web Developer.",

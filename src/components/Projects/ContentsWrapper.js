@@ -16,14 +16,14 @@ export default function ContentsWrapper({title, subtitle, shortDescription, link
           </h5>
           <div className="mt-4">
             <Link
-              to={link}
+              to={`/projects/${link}`}
               className="font-hand-writing text-xl"
             >{`Detail ->`}</Link>
           </div>
         </div>
         <div className="right-colum">
           <div className="">
-            <img className="m-3" src={mainImageUrl} alt="" />
+            <img className="m-3" src={mainImageUrl} alt="project" />
           </div>
         </div>
       </div>

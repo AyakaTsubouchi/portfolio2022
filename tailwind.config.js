@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "hand-writing": ["Patrick Hand", "cursive"],
+        // "hand-writing": ["Patrick Hand", "cursive"],
+        "hand-writing": ["Open Sans", "sans-serif"],
+        "sans": ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
         'postcard-front': "url('images/card_front_bg.png')",

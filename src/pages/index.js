@@ -7,11 +7,11 @@ import qs from "query-string";
 import { changeLanguage } from "app/slices/settings";
 import history from "app/history";
 import { ShowTop } from "util/helper";
-import ScrollToTop from "components/ScrollToTop";
 import MetaTags from "react-meta-tags";
 import locales from "app/locales";
 import LandingPage from "pages/LandingPage";
 import SingleProject from "pages/SingleProject"
+import Projects from "components/Projects"
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -34,11 +34,14 @@ export default function Index() {
         locale={queryLan || lan}
         messages={locales.getIntlMessages(queryLan || lan)}
       >
-        <ShowTop />
+        {/* <ShowTop /> */}
         <div className="main-page" id="main-page">
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/projects/singleproject" element={<SingleProject />} />
+            {/* <Route path="/bonalife" element={<SingleProject />} /> */}
+            <Route path={`projects/:name`}  element={<SingleProject />} />
+            <Route path={`projects`}  element={<Projects />} />
+        
           </Routes>
         </div>
       </IntlProvider>

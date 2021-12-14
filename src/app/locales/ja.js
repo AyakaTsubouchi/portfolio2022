@@ -6,6 +6,8 @@ export default {
     "contact":"お問い合わせ",
     "name":"坪内　文香",
     "address":process.env.REACT_APP_EMAIL,
+    "features":"ポイント",
+
     "home_greeting":"こんにちは！",
     "home_self_one":"私は",
     "home_self_one_strong":"Frontend Web Developerです。",

@@ -3,19 +3,27 @@ import bonaMainDesktop from "images/projects/bona_home.png";
 import bonaMainMobile from "images/projects/bona_mobile.png";
 import bonaMap from "images/projects/bona_map.gif";
 import bonaCustompost from "images/projects/bona_custompost.png";
+import { getData } from "app/data";
+import { Link , useParams } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
-export default function index() {
+export default function Index() {
+  const { name } = useParams();
+  const projects = getData("projects");
+  const projectContent = projects.find((project) => project.link === name);
   return (
     <>
-      <div className="single-project p-10 bg-lime-300">
+      <div className={`single-project p-10 ${projectContent.bgColor}`}>
         <div className="page-inner bg-white p-10">
           <div className="header">
             <h5 className="font-hand-writing text-xl">
-              Wordpress Theme Development
+              {projectContent.subtitle}
             </h5>
-            <h1 className="font-hand-writing text-3xl">Bonalife Website</h1>
+            <h1 className="font-hand-writing text-3xl">
+              {projectContent.title}
+            </h1>
             <h5 className="font-hand-writing text-xl">
-              Responsive Website for Salon
+              {projectContent.shortDescription}
             </h5>
           </div>
           <div className="grid grid-col-1 desktop:grid-cols-2">
@@ -28,40 +36,32 @@ export default function index() {
               </div>
             </div>
             <div className="left-column font-hand-writing mt-10">
-              <h5 className="text-3xl">Features</h5>
+              <h5 className="text-3xl">
+                <FormattedMessage id={"features"} />
+              </h5>
               <ul>
-                <li>Responsive website</li>
-                <li>Easy to move in : Import products with csv file.</li>
-                <li>
-                  Product rarings and reviews: Show customer feedback directly
-                  on the product page.
-                </li>
-                <li>
-                  Customizable categories, sorting function make products easier
-                  to find.
-                </li>
-                <li>
-                  limiting access to the admin panel for users who are logged in
-                  or allowed by IP addresses. it makes the website more secure.
-                </li>
-                <li>
-                  Blog system: Publish greate content helps build a strong
-                  brand.{" "}
-                </li>
-                <li>
-                  SEO friendly : Using header tags properly, adding discription
-                  for each page, creating a sitemap and more. These tips
-                  increase the chance to get new customers.
-                </li>
+                {projectContent.features &&
+                  projectContent.features.map((feature) => <li>{feature}</li>)}
               </ul>
             </div>
             <div className="right-colum">
               <div className="">
-                <img className="m-3" src={bonaMap} alt="bonalife map" />
+                <img
+                  className="m-3"
+                  src={projectContent.featureImageUrl}
+                  alt="bonalife map"
+                />
               </div>
             </div>
           </div>
+          <div className="image-gallery grid grid-col-1 desktop:grid-cols-2">
+            {projectContent.imageGallery &&
+              projectContent.imageGallery.map((image) => (
+                <img src={image} alt="project gallery" />
+              ))}
+          </div>
         </div>
+        <Link to="/" className="font-hand-writing">Back to Home</Link>
       </div>
     </>
   );

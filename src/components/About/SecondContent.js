@@ -8,7 +8,7 @@ export default function SecondContent() {
       </h1>
       <div className="text-box transparent-white">
         <p className="only-desktop text-lg tablet:text-xl font-hand-writing">
-          My first task at my first job was make a WordPress theme for a
+          My first task was make a WordPress theme for a
           company. I hadn’t had any experience of building WordPress theme. I
           learned a lot from a senior developer and we launch the website in one
           month.
