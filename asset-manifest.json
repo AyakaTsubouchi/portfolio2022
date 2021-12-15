@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio2022/static/css/main.17e7d260.chunk.css",
-    "main.js": "/portfolio2022/static/js/main.af4bd218.chunk.js",
-    "main.js.map": "/portfolio2022/static/js/main.af4bd218.chunk.js.map",
-    "runtime-main.js": "/portfolio2022/static/js/runtime-main.c2f9e9d0.js",
-    "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.c2f9e9d0.js.map",
-    "static/js/2.1888f730.chunk.js": "/portfolio2022/static/js/2.1888f730.chunk.js",
-    "static/js/2.1888f730.chunk.js.map": "/portfolio2022/static/js/2.1888f730.chunk.js.map",
-    "static/js/3.27cc69c8.chunk.js": "/portfolio2022/static/js/3.27cc69c8.chunk.js",
-    "static/js/3.27cc69c8.chunk.js.map": "/portfolio2022/static/js/3.27cc69c8.chunk.js.map",
+    "main.js": "/portfolio2022/static/js/main.33bb983d.chunk.js",
+    "main.js.map": "/portfolio2022/static/js/main.33bb983d.chunk.js.map",
+    "runtime-main.js": "/portfolio2022/static/js/runtime-main.dd610c31.js",
+    "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.dd610c31.js.map",
+    "static/js/2.1981c149.chunk.js": "/portfolio2022/static/js/2.1981c149.chunk.js",
+    "static/js/2.1981c149.chunk.js.map": "/portfolio2022/static/js/2.1981c149.chunk.js.map",
+    "static/js/3.5985867e.chunk.js": "/portfolio2022/static/js/3.5985867e.chunk.js",
+    "static/js/3.5985867e.chunk.js.map": "/portfolio2022/static/js/3.5985867e.chunk.js.map",
     "index.html": "/portfolio2022/index.html",
     "static/css/main.17e7d260.chunk.css.map": "/portfolio2022/static/css/main.17e7d260.chunk.css.map",
-    "static/js/2.1888f730.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.1888f730.chunk.js.LICENSE.txt",
+    "static/js/2.1981c149.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.1981c149.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio2022/static/media/card_front_bg.8c4c935a.png",
     "static/media/aya_feature.gif": "/portfolio2022/static/media/aya_feature.265a94c9.gif",
     "static/media/aya_home.png": "/portfolio2022/static/media/aya_home.38a8a052.png",
@@ -37,9 +37,9 @@
     "static/media/med_mobile.png": "/portfolio2022/static/media/med_mobile.dcb7cc95.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.c2f9e9d0.js",
-    "static/js/2.1888f730.chunk.js",
+    "static/js/runtime-main.dd610c31.js",
+    "static/js/2.1981c149.chunk.js",
     "static/css/main.17e7d260.chunk.css",
-    "static/js/main.af4bd218.chunk.js"
+    "static/js/main.33bb983d.chunk.js"
   ]
 }
