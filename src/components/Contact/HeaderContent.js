@@ -21,7 +21,7 @@ export default function HeaderContent() {
       </h1>
       <div className="text-right relative">
         <img src={Stamp} alt="ayaka_stamp" width="150px" className="mr-0 ml-auto"/>
-        {!isSent? <img src={SentStamp} alt="message is sent" className="sent-stamp"/>:null}
+        {isSent? <img src={SentStamp} alt="message is sent" className="sent-stamp"/>:null}
       </div>
     </>
   );

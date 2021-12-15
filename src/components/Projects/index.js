@@ -18,6 +18,7 @@ export default function index() {
               link= {project.link}
               mainImageUrl= {project.mainImageUrl}
               textColor={project.textColor}
+              techStack={project.techStack}
             />)}
           />
         ))}

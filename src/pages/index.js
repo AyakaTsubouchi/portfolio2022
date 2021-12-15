@@ -11,7 +11,9 @@ import MetaTags from "react-meta-tags";
 import locales from "app/locales";
 import LandingPage from "pages/LandingPage";
 import SingleProject from "pages/SingleProject"
-import Projects from "components/Projects"
+import Projects from "pages/Projects"
+import ScrollToTop from "components/ScrollToTop";
+
 
 export default function Index() {
   const dispatch = useDispatch();
@@ -43,6 +45,7 @@ export default function Index() {
             <Route path={`projects`}  element={<Projects />} />
         
           </Routes>
+          <ScrollToTop bgColor={"#fca5a5"}/>
         </div>
       </IntlProvider>
     </Router>

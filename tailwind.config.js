@@ -6,29 +6,24 @@ module.exports = {
       fontFamily: {
         // "hand-writing": ["Patrick Hand", "cursive"],
         "hand-writing": ["Open Sans", "sans-serif"],
-        "sans": ["Open Sans", "sans-serif"],
+        sans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
-        'postcard-front': "url('images/card_front_bg.png')",
-        'postcard-back-one': "url('images/about_vancouver.jpeg')",
-        'postcard-back-two': "url('images/about_two.jpeg')",
-       }
+        "postcard-front": "url('images/card_front_bg.png')",
+        "postcard-back-one": "url('images/about_vancouver.jpeg')",
+        "postcard-back-two":
+          "url('images/about_two.jpeg')",
+      },
+      background:{
+
+      }
     },
     screens: {
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
-
       laptop: "991px",
-      // => @media (min-width: 991px) { ... }
-
       desktop: "1280px",
-      // => @media (min-width: 1280px) { ... }
     },
-    // colors: {
-    //   primary: "#5c6ac4",
-    //   secondary: "#ecc94b",
-    //   // ...
-    // },
   },
   variants: {
     extend: {},

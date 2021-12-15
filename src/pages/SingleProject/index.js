@@ -4,8 +4,9 @@ import bonaMainMobile from "images/projects/bona_mobile.png";
 import bonaMap from "images/projects/bona_map.gif";
 import bonaCustompost from "images/projects/bona_custompost.png";
 import { getData } from "app/data";
-import { Link , useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
+import GoHome from "components/GoHome"
 
 export default function Index() {
   const { name } = useParams();
@@ -25,43 +26,59 @@ export default function Index() {
             <h5 className="font-hand-writing text-xl">
               {projectContent.shortDescription}
             </h5>
+            {projectContent.webUrl && (
+              <a href={projectContent.webUrl}>URL: {projectContent.webUrl}</a>
+            )}
           </div>
-          <div className="grid grid-col-1 desktop:grid-cols-2">
-            <div className="left-column">
-              <img className="m-3 img-h-450" src={bonaMainMobile} alt="" />
-            </div>
-            <div className="right-colum">
-              <div className="">
-                <img className="m-3 w-full" src={bonaMainDesktop} alt="" />
-              </div>
-            </div>
-            <div className="left-column font-hand-writing mt-10">
-              <h5 className="text-3xl">
+          <div className="my-12 grid grid-col-1 desktop:grid-cols-2 bg-color-black">
+            <img
+              className="m-3 img-h-450"
+              src={projectContent.mainImageUrl}
+              alt=""
+            />
+            <img
+              className="m-3 img-h-450 mx-auto only-desktop"
+              src={projectContent.mobileImageUrl}
+              alt="project"
+            />
+          </div>
+          <div className="my-12 grid grid-col-1 desktop:grid-cols-2">
+            <div className="font-hand-writing mt-10 mb-5">
+              <h5 className="text-3xl my-5">
                 <FormattedMessage id={"features"} />
               </h5>
-              <ul>
+              <ul className="list-disc pl-5">
                 {projectContent.features &&
                   projectContent.features.map((feature) => <li>{feature}</li>)}
               </ul>
             </div>
-            <div className="right-colum">
-              <div className="">
-                <img
-                  className="m-3"
-                  src={projectContent.featureImageUrl}
-                  alt="bonalife map"
-                />
-              </div>
-            </div>
+            <img
+              className="m-3 border-2 shadow-md"
+              src={projectContent.featureImageUrl}
+              alt="project"
+            />
           </div>
           <div className="image-gallery grid grid-col-1 desktop:grid-cols-2">
+            <div className="desktop:order-2  mb-5 desktop:ml-8">
+              <h5 className="text-3xl my-5">What I Worked On</h5>
+              {projectContent.role &&
+                projectContent.role.map((feature) => <p>{feature}</p>)}
+            </div>
+
             {projectContent.imageGallery &&
               projectContent.imageGallery.map((image) => (
-                <img src={image} alt="project gallery" />
+                <img
+                  className="border-2 shadow-md"
+                  src={image}
+                  alt="project gallery"
+                />
               ))}
           </div>
         </div>
-        <Link to="/" className="font-hand-writing">Back to Home</Link>
+        <Link to="/projects" className="text-white font-hand-writing text-xl">
+          {"<- Other Projects"}
+        </Link>
+        <GoHome/>
       </div>
     </>
   );

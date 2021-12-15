@@ -12,7 +12,7 @@ export default function ContentsWrapper({
 }) {
   return (
     <>
-      <div className={textColor}>
+      <div className={`text-${textColor}`}>
         <h5 className="font-hand-writing text-xl desktop:text-3xl">
           {subtitle}
         </h5>
@@ -21,18 +21,20 @@ export default function ContentsWrapper({
         </h1>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 desktop:grid-cols-2">
+      <div className={`mt-5 tablet:mt-20 grid grid-cols-1 desktop:grid-cols-2 text-${textColor}`}>
         <div>
           <h5 className="font-hand-writing text-xl desktop:text-3xl">
             {shortDescription}
           </h5>
-          <ul>
+          <ul className="mt-3 w-full">
           {
-            techStack &&  techStack.map(skill=>(<li>{skill}</li>))
+            techStack &&  techStack.map(skill=>(
+              <li className={`inline-block  m-2 px-2 py-1 border border-${textColor}`}>{skill}</li>
+              ))
           }
-            <li></li>
+     
           </ul>
-          <div className="mt-3">
+          <div className="mt-3 animate-bounce">
             <Link
               to={`/projects/${link}`}
               className="font-hand-writing text-xl"

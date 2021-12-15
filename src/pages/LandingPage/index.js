@@ -7,7 +7,6 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Back from "components/PostCardStyle/Back";
 import FirstContent from "components/About/FirstContent";
 import SecondContent from "components/About/SecondContent";
-import ScrollToTop from "components/ScrollToTop";
 export default function index() {
   return (
     <div>
@@ -16,7 +15,7 @@ export default function index() {
         <About />
         <Projects />
         <Contact />
-        <ScrollToTop bgColor={"#fca5a5"}/>
+
       {/* </div> */}
       {/* <div className="only-desktop">
         <Parallax pages={6}>

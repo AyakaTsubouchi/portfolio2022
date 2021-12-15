@@ -1,0 +1,12 @@
+.go-to-home {
+    color: black;
+    position: fixed;
+    top: 0;
+    right: 60px;
+    transform: translateY(-100px);
+    transition-duration: 0.5s;
+    font-size: 2rem;
+}
+.go-to-home.visible {
+    transform: translateY(0px);
+}

@@ -60,14 +60,13 @@
   width: 90vw;
 }
 
-.postcard-inner ul li {
+.border-b-gray{
   border-bottom: 1px solid gray;
 }
 
 .postcard-body {
   width: 100%;
   height: 90%;
-  /* margin-top: -50px; */
 }
 
 .postcard-back {
@@ -99,6 +98,7 @@
 .card-back-title {
   margin-bottom: 50px;
 }
+
 /* contact */
 .sent-stamp{
   position: absolute;

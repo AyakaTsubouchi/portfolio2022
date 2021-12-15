@@ -3,13 +3,27 @@
     bottom: 130px;
     right: 20px;
     padding: 13px;
-    background-color: rgb(216, 216, 216);
-    opacity:0.9;
+    opacity: 0.9;
     border-radius: 30px;
     transform: rotate(180deg) translateX(-100px);
     z-index: 1;
     transition-duration: 0.5s;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.3)
 }
-.scroll-to-top.visible{
-    transform:rotate(180deg) translateX(0px);
+
+.scroll-to-top.visible {
+    transform: rotate(180deg) translateX(0px);
+}
+
+.go-to-home {
+    color: black;
+    position: fixed;
+    top: 0;
+    right: 60px;
+    transform: translateY(-100px);
+    transition-duration: 0.5s;
+    font-size: 2rem;
+}
+.go-to-home.visible {
+    transform: translateY(0px);
 }

@@ -8,7 +8,7 @@ export default function index() {
     <>
       <div id="about">
         <Back bg="bg-postcard-back-one" Content={FirstContent} />
-        <Back bg="bg-postcard-back-two" Content={SecondContent} />
+        <Back bg="bg-postcard-back-two bg-black bg-blend-hard-light" Content={SecondContent} />
       </div>
     </>
   );

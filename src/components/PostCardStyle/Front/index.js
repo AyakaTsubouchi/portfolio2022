@@ -9,8 +9,8 @@ export default function index({ Header, Left, Right }) {
             <Header />
           </div>
         </div>
-        <div className="postcard-body table">
-          <div className="table-cell">
+        <div className="postcard-body ">
+          <div className="">
             <div className="grid grid-cols-1 tablet:grid-cols-2">
               <div className="p-10 left-column">
                 <Left />

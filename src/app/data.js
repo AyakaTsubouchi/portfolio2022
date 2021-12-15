@@ -13,70 +13,110 @@ import goopterMultiLingual from "images/projects/goopter_multilingual.gif";
 import goopterContact from "images/projects/goopter_contact.png";
 import goopterCarousel from "images/projects/goopter_carousel.gif";
 
+import medMain from "images/projects/med_home.png";
+import medMainMobile from "images/projects/med_mobile.png";
+import medContact from "images/projects/med_contact.png";
+import medFeature from "images/projects/med_feature.gif";
+
 export function getData(name) {
   const intl = getIntl();
   const str = (id, values) => intl.formatMessage({ id }, values);
 
   const projects = [
     {
-      title: "Website",
-      subtitle: "Wordpress Theme Development",
-      shortDescription: "Responsive Wordpress Theme for medical supplier",
+      title: str("wordpress_theme"),
+      subtitle: str("project_med_subtitle"),
+      // shortDescription: "Responsive Website for medical supplier",
       link: "medproducts",
-      mainImageUrl: bonaMain,
+      mainImageUrl: medMain,
       bgColor: "bg-green",
-      textColor:"text-white",
-      techStack:["WordPress","Woocommerce","Custom post type","Custom field","Custom Taxonomy","Contact form", "Carousel","Blog support"],
-      webUrl:"http://hhmedproducts.com/",
-      features: [
-        "Responsive website",
-        "Easy to import products with csv file.",
-        "Limiting access to the admin panel by IP addresses",
-        "All the contents are customizable from WP admin dashboard",
-        "Provided the user guide",
-        "Product sorting function and search bar to enable their customers to find the product easily."
+      textColor: "white",
+      techStack: [
+        "WordPress",
+        "Woocommerce",
+        "CustomPostType",
+        "CustomField",
+        "CustomTaxonomy",
+        "ContactForm",
+        "Carousel",
+        "Blog",
       ],
-      role:["This is a sample Wordpress theme of my company.","My roll in this project was building a Wordpress theme following the design mockup.","I used Woocommerce plugin to handle products.","And I overwrite the product page by php.","It took one month to finish this project."],
-      mobileImageUrl: bonaMainMobile,
-      featureImageUrl: bonaMap,
-      imageGallery: [bonaMultiLingual, bonaContact],
+      webUrl: "http://hhmedproducts.com/",
+      features: [
+        str("project_med_feature1"),
+        str("project_med_feature2"),
+        str("project_med_feature3"),
+        str("project_med_feature4"),
+        str("project_med_feature5"),
+        str("project_med_feature6"),
+      ],
+      role: [
+        str("project_med_role1"),
+        str("project_med_role2"),
+        str("project_med_role3"),
+        str("project_med_role4"),
+        str("project_med_role5"),
+      ],
+      mobileImageUrl: medMainMobile,
+      featureImageUrl: medFeature,
+      imageGallery: [medContact],
     },
     {
-      title: "Website",
-      subtitle: "Wordpress Plugin Development",
-      shortDescription: "Responsive Website for Tech Company",
+      title: str("wordpress_plugin"),
+      subtitle: "Responsive Website for Tech Company",
+      // shortDescription: "",
       link: "goopter",
       mainImageUrl: goopterMain,
       bgColor: "bg-red-300",
-      // textColor:"text-white",
-      techStack:["ReactJS","Multilingual","WordPress","Custom post type","Contact form", "Carousel"],
-      webUrl:"http://hhmedproducts.com/",
+      textColor: "black",
+      techStack: [
+        "ReactJS",
+        "Multilingual",
+        "WordPress",
+        "CustomPostType",
+        "Contact form",
+        "Carousel",
+        "WP REST API",
+      ],
+      webUrl: "https://www.goopter.com/",
       features: [
-        "Responsive website",
-        "Easy to import products with csv file.",
-        "limiting access to the admin panel for users who are logged in or allowed by IP addresses. it makes the website more secure.",
+        str("project_goopter_feature1"),
+        str("project_goopter_feature2"),
+        str("project_goopter_feature3"),
+        str("project_goopter_feature4"),
+      ],
+      role: [
+        str("project_goopter_role1"),
+        str("project_goopter_role2"),
+        str("project_goopter_role3"),
       ],
       mobileImageUrl: goopterMainMobile,
       featureImageUrl: goopterHeader,
-      imageGallery: [goopterMultiLingual, goopterContact, goopterCarousel],
+      imageGallery: [goopterCarousel],
     },
     {
-      title: "Website",
-      subtitle: "Wordpress Theme Development",
-      shortDescription: "Responsive Wordpress Theme for salon",
+      title: str("wordpress_theme"),
+      subtitle: "Responsive Website for salon",
+      // shortDescription: "Responsive Website for salon",
       link: "bonalife",
       mainImageUrl: bonaMain,
       bgColor: "bg-lime-300",
-      techStack:["WordPress","Custom post type","Contact form", "Carousel"],
-      webUrl:"http://bonalife.goopter.com/",
+      textColor: "black",
+      techStack: ["WordPress", "CustomPostType", "Contact form", "Carousel"],
+      webUrl: "http://bonalife.goopter.com/",
       features: [
-        "Responsive website",
-        "Easy to move in : Import products with csv file.",
-        "limiting access to the admin panel for users who are logged in or allowed by IP addresses. it makes the website more secure.",
+        str("project_bona_feature1"),
+        str("project_bona_feature2"),
       ],
       mobileImageUrl: bonaMainMobile,
       featureImageUrl: bonaMap,
-      imageGallery: [bonaMultiLingual, bonaContact],
+      imageGallery: [bonaContact],
+      role: [
+        str("project_bona_role1"),
+        str("project_bona_role2"),
+        str("project_bona_role3"),
+        str("project_bona_role4"),
+      ],
     },
   ];
   return eval(name);
