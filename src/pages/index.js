@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { IntlProvider } from "react-intl";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import _ from "lodash";
 import qs from "query-string";
 import { changeLanguage } from "app/slices/settings";
@@ -29,7 +30,7 @@ export default function Index() {
     );
   };
   return (
-    <Router history={history}>
+    <Router history={history} basename={process.env.PUBLIC_URL}>
       <IntlProvider
         locale={queryLan || lan}
         messages={locales.getIntlMessages(queryLan || lan)}

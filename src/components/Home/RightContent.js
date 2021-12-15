@@ -1,26 +1,28 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
+import { HashLink as Link } from 'react-router-hash-link';
+
 export default function RightContent() {
   return (
     <>
       <ul>
         <li className="border-b-gray font-hand-writing tablet:text-2xl mt-4">
-          <a href="#about">
+          <Link to="#about">
             {" "}
             <FormattedMessage id={"about"} />
-          </a>
+          </Link>
         </li>
         <li className="border-b-gray font-hand-writing tablet:text-2xl mt-4">
-          <a href="#projects">
+          <Link to="#projects">
             {" "}
             <FormattedMessage id={"project"} />
-          </a>
+          </Link>
         </li>
         <li className="border-b-gray font-hand-writing tablet:text-2xl mt-4">
-          <a href="#contact">
+          <Link to="#contact">
             {" "}
             <FormattedMessage id={"contact"} />
-          </a>
+          </Link>
         </li>
       </ul>
     </>
