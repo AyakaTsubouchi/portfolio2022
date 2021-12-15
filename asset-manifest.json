@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio2022/static/css/main.d85ed7f8.chunk.css",
-    "main.js": "/portfolio2022/static/js/main.9f7ca8ea.chunk.js",
-    "main.js.map": "/portfolio2022/static/js/main.9f7ca8ea.chunk.js.map",
+    "main.js": "/portfolio2022/static/js/main.50ede865.chunk.js",
+    "main.js.map": "/portfolio2022/static/js/main.50ede865.chunk.js.map",
     "runtime-main.js": "/portfolio2022/static/js/runtime-main.c9cc75e4.js",
     "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.c9cc75e4.js.map",
-    "static/js/2.c7237813.chunk.js": "/portfolio2022/static/js/2.c7237813.chunk.js",
-    "static/js/2.c7237813.chunk.js.map": "/portfolio2022/static/js/2.c7237813.chunk.js.map",
+    "static/js/2.f4133765.chunk.js": "/portfolio2022/static/js/2.f4133765.chunk.js",
+    "static/js/2.f4133765.chunk.js.map": "/portfolio2022/static/js/2.f4133765.chunk.js.map",
     "static/js/3.3973b278.chunk.js": "/portfolio2022/static/js/3.3973b278.chunk.js",
     "static/js/3.3973b278.chunk.js.map": "/portfolio2022/static/js/3.3973b278.chunk.js.map",
     "index.html": "/portfolio2022/index.html",
     "static/css/main.d85ed7f8.chunk.css.map": "/portfolio2022/static/css/main.d85ed7f8.chunk.css.map",
-    "static/js/2.c7237813.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.c7237813.chunk.js.LICENSE.txt",
+    "static/js/2.f4133765.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.f4133765.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio2022/static/media/card_front_bg.8c4c935a.png",
     "static/media/aya_feature.gif": "/portfolio2022/static/media/aya_feature.265a94c9.gif",
     "static/media/aya_home.png": "/portfolio2022/static/media/aya_home.38a8a052.png",
@@ -38,8 +38,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c9cc75e4.js",
-    "static/js/2.c7237813.chunk.js",
+    "static/js/2.f4133765.chunk.js",
     "static/css/main.d85ed7f8.chunk.css",
-    "static/js/main.9f7ca8ea.chunk.js"
+    "static/js/main.50ede865.chunk.js"
   ]
 }
