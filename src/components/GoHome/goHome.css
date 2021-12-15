@@ -6,6 +6,7 @@
     transform: translateY(-100px);
     transition-duration: 0.5s;
     font-size: 2rem;
+    z-index:1
 }
 .go-to-home.visible {
     transform: translateY(0px);

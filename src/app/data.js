@@ -18,6 +18,11 @@ import medMainMobile from "images/projects/med_mobile.png";
 import medContact from "images/projects/med_contact.png";
 import medFeature from "images/projects/med_feature.gif";
 
+import ayaMain from "images/projects/aya_home.png";
+import ayaMainMobile from "images/projects/aya_mobile.png";
+import ayaFeature from "images/projects/aya_feature.gif";
+import ayaMultilingual from "images/projects/aya_multilingual.gif";
+
 export function getData(name) {
   const intl = getIntl();
   const str = (id, values) => intl.formatMessage({ id }, values);
@@ -63,8 +68,6 @@ export function getData(name) {
     },
     {
       title: str("wordpress_plugin"),
-      subtitle: "Responsive Website for Tech Company",
-      // shortDescription: "",
       link: "goopter",
       mainImageUrl: goopterMain,
       bgColor: "bg-red-300",
@@ -93,6 +96,38 @@ export function getData(name) {
       mobileImageUrl: goopterMainMobile,
       featureImageUrl: goopterHeader,
       imageGallery: [goopterCarousel],
+    },
+    {
+      title: str("react_website"),
+      subtitle: str("project_aya_subtitle"),
+      link: "ayaka",
+      mainImageUrl: ayaMain,
+      bgColor: "bg-blue",
+      textColor: "black",
+      techStack: [
+        "HTML&CSS",
+        "ReactJS",
+        "ReactIntl",
+        "Tailwind",
+        "Redux",
+        "emailJS",
+      ],
+      webUrl: "https://localhost/",
+      gitUrl: "https://github.com/AyakaTsubouchi/portfolio2022",
+      features: [
+        str("project_aya_feature1"),
+        str("project_aya_feature2"),
+        str("project_aya_feature3"),
+        str("project_aya_feature4"),
+      ],
+      role: [
+        str("project_aya_role1"),
+        str("project_aya_role2"),
+        str("project_aya_role3"),
+      ],
+      mobileImageUrl: ayaMainMobile,
+      featureImageUrl: ayaFeature,
+      imageGallery: [ayaMultilingual],
     },
     {
       title: str("wordpress_theme"),

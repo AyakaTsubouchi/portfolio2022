@@ -75,8 +75,22 @@ export default {
     project_bona_feature2: "Limiting access to the admin panel",
 
     project_bona_role1: "This is my first wordoress theme for our client.",
-    project_bona_role2:  "I built the website following the design mockup with a senior developer.",
-    project_bona_role3: "I learned a lot about Wordpress theme development through this project.",
-    project_bona_role4:"It took three weeks to finish this project.",
+    project_bona_role2:
+      "I built the website following the design mockup with a senior developer.",
+    project_bona_role3:
+      "I learned a lot about Wordpress theme development through this project.",
+    project_bona_role4: "It took three weeks to finish this project.",
+
+    react_website: "React Website",
+    project_aya_subtitle: "Portfolio Website",
+    project_aya_feature1: "Responsive website",
+    project_aya_feature2: "Fast page transition thanks to ReactJS.",
+    project_aya_feature3:
+      "Implemented React Meta Tag to make it SEO friendly.",
+    project_aya_feature4:
+      "Used Tailwind to avoid the style style sheet too complex",
+    project_aya_role1: "I designed and coded.",
+    project_aya_role2: "I'd like visitors to feel an affinity with me, I used pop colors.",
+    project_aya_role3: "The sent stamp shows up after sending the message to make the website like a postcard",
   },
 };

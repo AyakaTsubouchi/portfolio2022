@@ -78,5 +78,17 @@ export default {
     project_bona_role2:  "先輩開発者とのデザインモックアップに従ってWebサイトを構築しました。",
     project_bona_role3: "このプロジェクトを通じてWordpressテーマの開発について多くのことを学びました。",
     project_bona_role4:"このプロジェクトを完了するのに3週間かかりました。",
+
+    react_website: "React WEBサイト",
+    project_aya_subtitle: "ポートフォリオ WEBサイト",
+    project_aya_feature1: "レスポンシブ WEBサイト",
+    project_aya_feature2: "ReactJSのおかげでページ遷移が速くなりました。",
+    project_aya_feature3:
+    "Reactメタタグを実装して、SEOに対応しました。",
+    project_aya_feature4:
+      "Tailwind CSSライブラリを使用して、スタイルシートが煩雑になるのを防ぎました",
+    project_aya_role1: "私はこのサイトのデザインとコーディングをしました。",
+    project_aya_role2: "親しみを感じてもらいたいと思い、ポップな色を使用しました。",
+    project_aya_role3: "コンタクトフォームの送信ボタンを押すとスタンプが表示されるようにしました。",
   }
 };

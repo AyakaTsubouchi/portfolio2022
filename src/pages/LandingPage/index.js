@@ -9,7 +9,7 @@ import FirstContent from "components/About/FirstContent";
 import SecondContent from "components/About/SecondContent";
 export default function index() {
   return (
-    <div>
+    <>
       {/* <div className="only-mobile"> */}
         <Home />
         <About />
@@ -44,6 +44,6 @@ export default function index() {
           </ParallaxLayer>
         </Parallax>
       </div> */}
-    </div>
+    </>
   );
 }
