@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio2022/static/css/main.d85ed7f8.chunk.css",
-    "main.js": "/portfolio2022/static/js/main.be5a783a.chunk.js",
-    "main.js.map": "/portfolio2022/static/js/main.be5a783a.chunk.js.map",
+    "main.js": "/portfolio2022/static/js/main.e3e8b802.chunk.js",
+    "main.js.map": "/portfolio2022/static/js/main.e3e8b802.chunk.js.map",
     "runtime-main.js": "/portfolio2022/static/js/runtime-main.c9cc75e4.js",
     "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.c9cc75e4.js.map",
     "static/js/2.a4123a94.chunk.js": "/portfolio2022/static/js/2.a4123a94.chunk.js",
@@ -17,6 +17,7 @@
     "static/media/aya_home.png": "/portfolio2022/static/media/aya_home.38a8a052.png",
     "static/media/aya_mobile.png": "/portfolio2022/static/media/aya_mobile.60211d85.png",
     "static/media/aya_multilingual.gif": "/portfolio2022/static/media/aya_multilingual.91bb92b2.gif",
+    "static/media/ayaka_resume2022_portfolio.fec0da31.pdf": "/portfolio2022/static/media/ayaka_resume2022_portfolio.fec0da31.pdf",
     "static/media/ayaka_stamp.c1310e94.png": "/portfolio2022/static/media/ayaka_stamp.c1310e94.png",
     "static/media/bona_contact.png": "/portfolio2022/static/media/bona_contact.aac3b7d9.png",
     "static/media/bona_home.png": "/portfolio2022/static/media/bona_home.5989f6c8.png",
@@ -40,6 +41,6 @@
     "static/js/runtime-main.c9cc75e4.js",
     "static/js/2.a4123a94.chunk.js",
     "static/css/main.d85ed7f8.chunk.css",
-    "static/js/main.be5a783a.chunk.js"
+    "static/js/main.e3e8b802.chunk.js"
   ]
 }
