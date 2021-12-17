@@ -14,7 +14,7 @@ export default function Index() {
       <MetaTags>
         <title>{name.toUpperCase()}:Ayaka</title>
       </MetaTags>
-      <div className={`single-project p-10 ${projectContent.bgColor}`}>
+      <div id="#top" className={`single-project p-10 ${projectContent.bgColor}`}>
         <div className="page-inner bg-white p-10">
           <div className="header">
             <h5 className="font-hand-writing text-xl">

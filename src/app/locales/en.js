@@ -2,7 +2,7 @@ export default {
   common: {
     portfolio: "PORTFOLIO",
     about: "About",
-    project: "Project",
+    projects: "Projects",
     contact: "Contact",
     name: "Ayaka Tsubouchi",
     address: process.env.REACT_APP_EMAIL,

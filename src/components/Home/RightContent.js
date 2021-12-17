@@ -15,7 +15,7 @@ export default function RightContent() {
         <li className="border-b-gray font-hand-writing tablet:text-2xl mt-4">
           <Link to="#projects">
             {" "}
-            <FormattedMessage id={"project"} />
+            <FormattedMessage id={"projects"} />
           </Link>
         </li>
         <li className="border-b-gray font-hand-writing tablet:text-2xl mt-4">

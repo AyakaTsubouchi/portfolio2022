@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function ContentsWrapper({
   title,
@@ -36,7 +36,7 @@ export default function ContentsWrapper({
           </ul>
           <div className="mt-3 animate-bounce">
             <Link
-              to={`/projects/${link}`}
+              to={`/projects/${link}#top`}
               className="font-hand-writing text-xl"
             >{`Detail ->`}</Link>
           </div>

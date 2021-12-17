@@ -2,7 +2,7 @@ export default {
   common: {
     "portfolio":"PORTFOLIO",
     "about":"自己紹介",
-    "project":"プロジェクト",
+    "projects":"プロジェクト",
     "contact":"お問い合わせ",
     "name":"坪内　文香",
     "address":process.env.REACT_APP_EMAIL,
