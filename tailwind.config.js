@@ -9,10 +9,10 @@ module.exports = {
         sans: ["Open Sans", "sans-serif"],
       },
       backgroundImage: {
-        "postcard-front": "url('images/card_front_bg.png')",
-        "postcard-back-one": "url('images/about_vancouver.jpeg')",
+        "postcard-front": "url('assets/images/card_front_bg.png')",
+        "postcard-back-one": "url('assets/images/about_vancouver.jpeg')",
         "postcard-back-two":
-          "url('images/about_two.jpeg')",
+          "url('assets/images/about_two.jpeg')",
       },
       background:{
 

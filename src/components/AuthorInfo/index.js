@@ -2,6 +2,7 @@ import React from 'react'
 import { FormattedMessage } from "react-intl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin,faGithub } from "@fortawesome/free-brands-svg-icons";
+import cs from "assets/ayaka_resume2022_portfolio.pdf"
 
 export default function index() {
     return (
@@ -21,6 +22,11 @@ export default function index() {
           <li className="text-3xl my-3 mx-5">
             <a href="https://www.linkedin.com/in/ayaka-tsubouchi-b0474718a/" target="_blank">
               <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+          </li>
+          <li className="text-3xl my-3 mx-5">
+            <a href={cs} target="_blank">
+              CV
             </a>
           </li>
         </ul>

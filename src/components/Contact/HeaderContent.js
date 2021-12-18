@@ -1,8 +1,8 @@
 import React,{useState} from "react";
 import LangSelect from "components/LangSelect";
 import {FormattedMessage} from "react-intl";
-import Stamp from "images/ayaka_stamp.png";
-import SentStamp from "images/sent_stamp.png";
+import Stamp from "assets/images/ayaka_stamp.png";
+import SentStamp from "assets/images/sent_stamp.png";
 import { useSelector, useDispatch } from "react-redux";
 
 export default function HeaderContent() {

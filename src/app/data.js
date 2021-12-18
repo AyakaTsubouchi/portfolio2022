@@ -1,27 +1,27 @@
 import { getIntl } from "app/locales";
 
-import bonaMain from "images/projects/bona_home.png";
-import bonaMainMobile from "images/projects/bona_mobile.png";
-import bonaMap from "images/projects/bona_map.gif";
-import bonaMultiLingual from "images/projects/bona_multilingual.gif";
-import bonaContact from "images/projects/bona_contact.png";
+import bonaMain from "assets/images/projects/bona_home.png";
+import bonaMainMobile from "assets/images/projects/bona_mobile.png";
+import bonaMap from "assets/images/projects/bona_map.gif";
+import bonaMultiLingual from "assets/images/projects/bona_multilingual.gif";
+import bonaContact from "assets/images/projects/bona_contact.png";
 
-import goopterMain from "images/projects/goopter_home.png";
-import goopterMainMobile from "images/projects/goopter_mobile.png";
-import goopterHeader from "images/projects/goopter_header.gif";
-import goopterMultiLingual from "images/projects/goopter_multilingual.gif";
-import goopterContact from "images/projects/goopter_contact.png";
-import goopterCarousel from "images/projects/goopter_carousel.gif";
+import goopterMain from "assets/images/projects/goopter_home.png";
+import goopterMainMobile from "assets/images/projects/goopter_mobile.png";
+import goopterHeader from "assets/images/projects/goopter_header.gif";
+import goopterMultiLingual from "assets/images/projects/goopter_multilingual.gif";
+import goopterContact from "assets/images/projects/goopter_contact.png";
+import goopterCarousel from "assets/images/projects/goopter_carousel.gif";
 
-import medMain from "images/projects/med_home.png";
-import medMainMobile from "images/projects/med_mobile.png";
-import medContact from "images/projects/med_contact.png";
-import medFeature from "images/projects/med_feature.gif";
+import medMain from "assets/images/projects/med_home.png";
+import medMainMobile from "assets/images/projects/med_mobile.png";
+import medContact from "assets/images/projects/med_contact.png";
+import medFeature from "assets/images/projects/med_feature.gif";
 
-import ayaMain from "images/projects/aya_home.png";
-import ayaMainMobile from "images/projects/aya_mobile.png";
-import ayaFeature from "images/projects/aya_feature.gif";
-import ayaMultilingual from "images/projects/aya_multilingual.gif";
+import ayaMain from "assets/images/projects/aya_home.png";
+import ayaMainMobile from "assets/images/projects/aya_mobile.png";
+import ayaFeature from "assets/images/projects/aya_feature.gif";
+import ayaMultilingual from "assets/images/projects/aya_multilingual.gif";
 
 export function getData(name) {
   const intl = getIntl();

@@ -3,8 +3,8 @@ import "./langSelect.css"
 import { useSelector, useDispatch } from "react-redux";
 import { changeLanguage } from "app/slices/settings";
 import { replace } from "../../app/history";
-import English from "images/en_stamp.png";
-import Japanese from "images/jp_stamp.png";
+import English from "assets/images/en_stamp.png";
+import Japanese from "assets/images/jp_stamp.png";
 
 export default function LangSelect() {
   const lan = useSelector((state) => state?.settings?.lan ?? "en");
