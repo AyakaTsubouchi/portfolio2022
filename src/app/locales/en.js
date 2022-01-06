@@ -88,7 +88,7 @@ export default {
     project_aya_feature3:
       "Implemented React Meta Tag to make it SEO friendly.",
     project_aya_feature4:
-      "Used Tailwind to avoid the style style sheet too complex",
+      "Used Tailwind to avoid the style sheet too complex",
     project_aya_role1: "I designed and coded.",
     project_aya_role2: "I'd like visitors to feel an affinity with me, I used pop colors.",
     project_aya_role3: "The sent stamp shows up after sending the message to make the website like a postcard",
