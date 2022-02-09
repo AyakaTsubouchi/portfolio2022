@@ -7,8 +7,12 @@ export default function index() {
   return (
     <>
       <div id="about">
-        <Back bg="bg-postcard-back-one" Content={FirstContent} />
-        <Back bg="bg-postcard-back-two bg-black bg-blend-hard-light" Content={SecondContent} />
+        <Back bg="bg-postcard-back-one" Content={FirstContent}>
+          <FirstContent />
+        </Back>
+        <Back bg="bg-postcard-back-two bg-black bg-blend-hard-light">
+          <SecondContent />
+        </Back>
       </div>
     </>
   );

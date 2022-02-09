@@ -9,20 +9,17 @@ export default function index() {
     <>
       <div id="projects">
         {projects.map((project) => (
-          <Back
-            bg={project.bgColor}
-            Content={() => (
-              <ContentsWrapper
-                title={project.title}
-                subtitle={project.subtitle}
-                shortDescription={project.shortDescription}
-                link={project.link}
-                mainImageUrl={project.mainImageUrl}
-                textColor={project.textColor}
-                techStack={project.techStack}
-              />
-            )}
-          />
+          <Back bg={project.bgColor}>
+            <ContentsWrapper
+              title={project.title}
+              subtitle={project.subtitle}
+              shortDescription={project.shortDescription}
+              link={project.link}
+              mainImageUrl={project.mainImageUrl}
+              textColor={project.textColor}
+              techStack={project.techStack}
+            />
+          </Back>
         ))}
       </div>
     </>
